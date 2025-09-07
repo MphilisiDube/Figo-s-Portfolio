@@ -150,6 +150,7 @@ h3{
     color: teal;
 }
 .contact-details{
+    padding: 0px;
     font-size: 18px;
     line-height: 1.8;
 }
