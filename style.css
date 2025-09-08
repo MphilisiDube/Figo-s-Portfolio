@@ -119,8 +119,6 @@ h3{
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
-
 }
 .btn { 
   padding: 10px 20px;
@@ -173,10 +171,27 @@ footer {
 }
 
 #certifications {
-    padding: 40px 20px;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;   
+    padding: 60px 20px;
+}
+
+.certifications-container{
+    background-color: #222222;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+@media(max-width: 786px){
+    .certifications-container{
+        max-width: 100%;
+        margin: 0;
+        padding: 15px;
+    }
+
+}
+.certificate-title{
+    font-weight: bold;
 }
 
 .certificate-button{
@@ -191,17 +206,6 @@ footer {
     outline: 0px;
     border: 0px;
 } 
-    
-.certifications-container{
-    background-color: #222222;
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.certificate-title{
-    font-weight: bold;
-}
 
 .certificate-button:hover{
     transform: scale(1.03);
