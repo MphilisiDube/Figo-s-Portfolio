@@ -173,9 +173,9 @@ footer {
 }
 
 #certifications {
-    padding: 20px 60px;
+    padding: 40px 20px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     
 }
 
@@ -195,12 +195,13 @@ footer {
 .certifications-container{
     background-color: #222222;
     color: white;
-    
+    max-width: 600px; /* keeps it from being too wide */
+    width: 100%;      /* makes it responsive */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     padding: 20px;
     border-radius: 5px;
-   
-    
 }
+
 .certificate-title{
     font-weight: bold;
 }
