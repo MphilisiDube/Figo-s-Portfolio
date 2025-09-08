@@ -142,7 +142,7 @@ h3{
     padding: 60px 20px;
     text-align: center;
     color: #333;
-    margin-top: 0px;
+    margin-top: 0px; /*reseting from default margin to zero*/
 }
 #contact h2{
     font-size: 32px;
@@ -173,7 +173,7 @@ footer {
 }
 
 #certifications {
-    
+    padding: 60px 20px;
     display: flex;
     flex-wrap: wrap;
 }
