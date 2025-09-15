@@ -189,10 +189,15 @@ footer {
 }
 #film-body{
    background-color: #222222;
+}
 
-   @media (max-width: 768px) {
-    max-width: 100%;
-   }
+/* Mobile-specific rules */
+@media (max-width: 768px) {
+  .kombuis, .benz, .sondela, .architect, .flyaway, .ntokozo, .pharamedic, .pharadise, .clothing, .dimitri, .silvva, .ur, .djs, .interior, .corolla{
+    width: 100%;      /* make images full width */
+    height: auto;     /* keep proportions */
+    display: block;   /* remove inline gaps */
+  }
 }
 .sondela img, .architect img, .flyaway img, .pharadise img, .pharamedic img, .benz img, .interior img, .corolla img{
     height: 30%;
