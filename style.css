@@ -189,6 +189,10 @@ footer {
 }
 #film-body{
    background-color: #222222;
+
+   @media (max-width: 768px) {
+    max-width: 100%;
+   }
 }
 .sondela img, .architect img, .flyaway img, .pharadise img, .pharamedic img, .benz img, .interior img, .corolla img{
     height: 30%;
