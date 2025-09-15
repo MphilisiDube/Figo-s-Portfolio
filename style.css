@@ -1,3 +1,6 @@
+main {
+    padding-top: 100px; /* adjust based on header height */
+}
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -5,61 +8,22 @@ body{
     background-color: #f3f3f3;
     color: #333;
 }
-/*HEADER CONTAINER*/
-header{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    background-color: #0f0f0f;
-    padding: 20px 40px;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+.logo img {
+  height: 100px;       /* adjust to your preferred size */
+  width: auto;        /* keeps proportions */
+  display: block;     /* removes inline spacing issues */
+  margin-left: 20px;
 }
+    
+
 header h1{
     margin: 0;
     font-size: 1.8rem; /*what does 1.8rem mean?*/
     letter-spacing: 1px;
 }
-nav {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: color 0.2s ease;
-    
-}
-nav a:hover {
-    color: teal;
-    cursor: pointer;
-}
-/*Making the lay-out MOBILE FRIENDLY*/
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
-  nav a {
-    margin: 10px 0;
-  }
-}
 /* PROJECTS SECTION CONTAINER */
-/*This is the styling/arrangement of things that are inside this main container*/
-.projects-container{
-    display: flex; /*activates flex box*/
-    gap: 30px;      /*spacing between children*/
-    justify-content: center; /*centers container*/
-    flex-wrap: wrap; /*allows for mobile vertical wrap*/
-    
-}
+
 /* INDIVIDUAL PROJECT CARD */
 /*Styling of the project containers inside of the main container*/
 .project{
@@ -70,7 +34,6 @@ nav a:hover {
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: tranform 0.3 ease;
-    
 }
 .project a{
     text-decoration: none;
@@ -104,6 +67,7 @@ h3{
     align-items: center;/*align center, vertically*/
     padding: 20px; 
     text-align: center;
+    margin-top: -90px;
 }
 #hero-section img{
     width: 180px;
@@ -119,6 +83,8 @@ h3{
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 20px;
+
 }
 .btn { 
   padding: 10px 20px;
@@ -140,7 +106,7 @@ h3{
     padding: 60px 20px;
     text-align: center;
     color: #333;
-    margin-top: 0px; /*reseting from default margin to zero*/
+    margin-top: 0px;
 }
 #contact h2{
     font-size: 32px;
@@ -148,7 +114,6 @@ h3{
     color: teal;
 }
 .contact-details{
-    padding: 0px;
     font-size: 18px;
     line-height: 1.8;
 }
@@ -174,26 +139,23 @@ footer {
     padding: 60px 20px;
 }
 
+    
 .certifications-container{
     background-color: #222222;
     color: white;
     padding: 20px;
     border-radius: 5px;
     max-width: 400px;
+    margin: 0 auto;
 }
-
-@media(max-width: 786px){
-    .certifications-container{
-        max-width: 100%;
-        margin: 0;
-        padding: 15px;
-    }
-
+/* Mobile adjustments (“IF the screen is smaller than 768px, THEN apply these styles.”)*/
+@media (max-width: 768px) {
+  .certifications-container {
+    max-width: 100%;   /* use full width on small screens */
+    margin: 0;         /* remove auto margin */
+    padding: 15px;     /* less padding on mobile */
+  }
 }
-.certificate-title{
-    font-weight: bold;
-}
-
 .certificate-button{
     display: inline-block;
     text-decoration: none;
@@ -206,6 +168,9 @@ footer {
     outline: 0px;
     border: 0px;
 } 
+.certificate-title{
+    font-weight: bold;
+}
 
 .certificate-button:hover{
     transform: scale(1.03);
@@ -230,11 +195,11 @@ footer {
     width: 90%;
 }
 
-/*chat*/
+/*skills circles*/
 #skills-map {
   text-align: center;
   padding: 40px 20px;
-  margin: 60px;
+ margin: 60px;
   color: white;
 }
 
@@ -243,7 +208,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 .skill {
@@ -281,4 +246,135 @@ footer {
     height: 120px;
     font-size: 14px;
   }
+}
+
+/*dropdown on the menu*/
+/* Header container */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.header-container h1 {
+  color: white;
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  gap: 50px;
+
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding:  8px 0px;
+
+}
+
+nav a:hover {
+  color: #007b7b;
+  border-radius: 4px;
+  
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;        /* directly below the parent */
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 0;       /* remove extra padding */
+}
+
+/* Make links fill the dropdown */
+.dropdown-content a {
+  display: block;       /* fill full width */
+  width: 100%;
+  padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd; /* full-width hover effect */
+  color: teal;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*NAV LINKS RESPONSIVE*/
+/* Hamburger icon */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: teal;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;     /* height of your header */
+    right: 10px;
+    background-color: grey;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1000; /* make sure it sits above content */
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    color: black;         /* ensure links are visible */
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    position: static; /* keep dropdown inside menu */
+    background-color: #222;
+    box-shadow: none;
+    
+  }
+
+  .dropdown-content a{
+    color: white;
+  }
+  
 }

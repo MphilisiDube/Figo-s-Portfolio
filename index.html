@@ -7,14 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
     <div class="header-container">
-        <h1>FRED FIGO</h1>
-        <nav>
-            <a href="film.html">Photography</a>
-            <a href="https://open.spotify.com/playlist/6cJ7mTWSb1Vg3YJiXHhFen?si=ClZhlFvNRbCYYA-GF3chHA">R&R</a>
-            <a href="Images/FNBAPPCertificate.pdf">Web-dev</a>
 
+        <a href="index.html" class="logo">
+             <img src="Images/blackT2.png" alt="website Logo">
+        </a>
+        <div class="menu-toggle">☰</div>
+      
+        <nav>
+            <a href="film.html">Photography Portfolio</a>
+            <a href="Images/FNBAPPCertificate.pdf">Web-dev</a>
+            <div class="dropdown">
+                <a class="dropbtn" href="#">Relax & Receive</a>
+                <div class="dropdown-content">
+                    <a href="https://open.spotify.com/playlist/2oBHx9h1emqYswFJkYXO6a?si=DrfxdSFiSZyFT7gnvbNolA">Amapiano</a>
+                    <a href="https://open.spotify.com/playlist/0etFvV3lTPN410tflI7S38?si=tI_MIVfoTciIFk1Vfxc-mg">Deep House</a>
+                    <a href="https://open.spotify.com/playlist/3XvDYYU23ddZpLyQK1EGL5?si=LwXNqn6hS7ipSbfGk6nokw">Jazz Lounge</a>
+                    <a href="https://open.spotify.com/playlist/6cJ7mTWSb1Vg3YJiXHhFen?si=5NyjZclIQVayV0FiYXL1QA">Chill Select</a>
+                </div>
+            </div>
         </nav>
     </div>
     </header>
@@ -23,7 +36,7 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAfTOgVc4oIbAn9h0nQnzfNwXsKroJxQlMMg&s" 
             alt="Portrait of Figo">
             <p>-Creative Media & App Development Solutions-</p>
-            <a href="mailto:frefigo.mail@gmail.com" class="btn">Contact Details</a>
+            <a href="#contact" class="btn">Email Enquiry</a>
         </section>
         <section id="skills-map">
           
@@ -43,10 +56,11 @@
                  <div class="skill filled">Python/Django</div>
 
         </section>
+
         <section id="certifications">
             
             <div class="certifications-container">
-             <h3 class="certificate-title">FNBApp Certificate in Full-stack Development</h3>
+             <p class="certificate-title">FNBApp Certificate in Full-stack Development</p>
              <ul>
                 <li>Github + Collaborations</li>
                 <li>HTML 5</li>
@@ -59,22 +73,27 @@
 
              </ul>
             
-                <a href="Images/FNBAPPCertificate.pdf" target="_blank" class="certificate-button">View Certificate</a>
+                <a href="images/FNBAPPCertificate.pdf" target="_blank" class="certificate-button">View Certificate</a>
 
             </div>
            
         </section>
         
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="contact-details">
-                <p>Email: <a href="mailto:fredfigo@creativelogic.com">fredfigo.mail@gmail.com</a></p>
-                <p>Cell: <a href="tel:+27613953408">+27 61 395 3408</a></p>
-            </div>
-        </section> 
+        
     </main>
     <footer>
         <p>Created by: FIGO &copy;2025</p>
     </footer>
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    menuToggle.addEventListener("click", function() {
+      nav.classList.toggle("active");
+    });
+  });
+</script>
+
 </body>
 </html>
