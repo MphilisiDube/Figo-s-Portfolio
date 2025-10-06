@@ -176,14 +176,14 @@ footer {
     transform: scale(1.03);
     cursor: pointer;
 }
-.kombuis, .benz, .sondela, .architect, .flyaway, .ntokozo, .pharamedic, .pharadise, .clothing, .dimitri, .silvva, .ur, .djs, .interior, .corolla{
+.mphoxtay, .kombuis, .benz, .sondela, .architect, .flyaway, .ntokozo, .pharamedic, .pharadise, .clothing, .dimitri, .silvva, .ur, .djs, .interior, .corolla{
     padding: 60px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
    
 }
-.kombuis img, .ntokozo img, .clothing img, .dimitri img, .silvva img, .ur img, .djs img{
+.mphoxtay img, .kombuis img, .ntokozo img, .clothing img, .dimitri img, .silvva img, .ur img, .djs img{
     height: 30%;
     width: 30%;
 }
@@ -193,13 +193,13 @@ footer {
 
 /* Mobile-specific rules */
 @media (max-width: 768px) {
-  .kombuis, .benz, .sondela, .architect, .flyaway, .ntokozo, .pharamedic, .pharadise, .clothing, .dimitri, .silvva, .ur, .djs, .interior, .corolla{
+  .kombuis, .benz, .sondela, .architect, .flyaway, .ntokozo, .pharamedic, .pharadise, .clothing, .dimitri, .silvva, .ur, .djs, .interior, .corolla, .mobilemacs, .mphoxtay{
     width: 100%;      /* make images full width */
     height: auto;     /* keep proportions */
     display: block;   /* remove inline gaps */
   }
 }
-.sondela img, .architect img, .flyaway img, .pharadise img, .pharamedic img, .benz img, .interior img, .corolla img{
+.mobilemacs img, .sondela img, .architect img, .flyaway img, .pharadise img, .pharamedic img, .benz img, .interior img, .corolla img{
     height: 30%;
     width: 90%;
 }
