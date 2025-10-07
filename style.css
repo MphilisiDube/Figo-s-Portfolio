@@ -190,7 +190,8 @@ footer {
 .ntokozo img,
 .clothing img,
 .mphoxtay img,
-.silvva img {
+.silvva img,
+.ur img {
   width: 30%;         /* three images side by side */
   height: auto;
   object-fit: cover;
@@ -203,7 +204,8 @@ footer {
 .ntokozo,
 .clothing,
 .mphoxtay,
-.silvva {
+.silvva, 
+.ur{
   display: flex;
   justify-content: center;
   align-items: center;
