@@ -265,7 +265,8 @@ footer {
   .pharadise img,
   .pharamedic img,
   .flyaway img,
-  .interior img {
+  .interior img,
+  .ur img{
     width: 100%;
   }
 }
